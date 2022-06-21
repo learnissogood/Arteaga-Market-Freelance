@@ -226,7 +226,6 @@
   }
   
   .l-card {
-    width: 50%;
     margin-top: 50px !important;
     padding-left: 25px;
     padding-right: 25px;
@@ -234,6 +233,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
   
   .circular-portrait {
@@ -411,15 +411,19 @@
   }
 
   .card-content{
+      background: #485563;
+      background: -webkit-linear-gradient(to right, #29323c, #485563);
+      background: linear-gradient(to right, #29323c, #485563);
+      color: #fff;
       padding: 15px;
-      width: 200;
-      height: 500;
+      width: 300px;
+      height: 500px;
       border-radius: 30px;
       box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
   }
 
   .video {
-      width: 1000px;
+      width: 90%;
       height: 500px;
       aspect-ratio: 16/9;
       border-radius: 30px;
@@ -473,12 +477,13 @@
   }
   
   .card img {
-    height: 100%;
+    height: 80%;
     z-index: 10;
     transition: all .25s ease;
   }
   
   .card .con-text {
+    width: 100%;
     z-index: 30;
     position: absolute;
     bottom: 0px;
@@ -493,8 +498,6 @@
     margin-bottom: -170px;
     transition: all .25s ease;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
     flex-direction: column;
   }
   
@@ -527,7 +530,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
   }
   
   .contact form {
@@ -546,7 +548,7 @@
 
   
   .contact .short-contact {
-    min-height: 400px;
+    min-height: 230px;
   }
   
   .contact .form input[type="text"],
@@ -686,6 +688,7 @@
   
     .l-card {
       width: 100%;
+      justify-content: center;
     }
   
     .c-card {
