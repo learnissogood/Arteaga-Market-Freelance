@@ -405,21 +405,25 @@
   }
 
   .card-video {
-      width: 1500;
-      height: 1000;
-      background: rgb(94, 85, 85);
-      position: relative;
       display: flex;
-      align-items: center;
       justify-content: center;
+      gap: 30px;
+  }
+
+  .card-content{
+      padding: 15px;
+      width: 200;
+      height: 500;
       border-radius: 30px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
   }
 
   .video {
-      width: 70%;
-      height: 500;
+      width: 1000px;
+      height: 500px;
+      aspect-ratio: 16/9;
+      border-radius: 30px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
   }
   
   .card {
