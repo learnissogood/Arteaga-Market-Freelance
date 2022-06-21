@@ -403,31 +403,33 @@
     width: 80%;
     margin: 0 auto;
   }
-
+  
   .card-video {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
   }
-
-  .card-content{
-      background: #485563;
-      background: -webkit-linear-gradient(to right, #29323c, #485563);
-      background: linear-gradient(to right, #29323c, #485563);
-      color: #fff;
-      padding: 15px;
-      width: 300px;
-      height: 500px;
-      border-radius: 30px;
-      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
-  }
-
+  
   .video {
-      width: 90%;
-      height: 500px;
-      aspect-ratio: 16/9;
-      border-radius: 30px;
-      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+  }
+  
+  .card-content {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563);
+    background: linear-gradient(to right, #29323c, #485563);
   }
   
   .card {
@@ -740,6 +742,31 @@
   
     .box {
       flex: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .card-video {
+      grid-template-columns: 100%;
+    }
+  
+    .video {
+      border-radius: 0px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+  
+    .card-content {
+      padding: 20px;
+      padding-top: 10px;
+      border-radius: 0px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+  
+    .card-content h3{
+      margin: 0px;
+      padding: 0px;
     }
   }
   
