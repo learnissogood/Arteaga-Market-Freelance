@@ -435,7 +435,7 @@
 
   .card-padre {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 75% 25%;
   }
   
   .card {
@@ -455,6 +455,7 @@
   }
 
   .card-machine-content {
+    margin: 30px;
     padding: 30px;
     width: 100%;
     display: flex;
