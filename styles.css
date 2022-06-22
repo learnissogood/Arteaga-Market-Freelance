@@ -164,7 +164,7 @@ body {
   font-size: var(--font-3x-large);
   font-weight: bold;
   color: rgb(153, 255, 187);
-  filter: drop-shadow(3px 3px #000);
+  filter: drop-shadow(3px 3px 1px #000);
 }
 
 .hero i {
@@ -174,15 +174,17 @@ body {
 
 .hero a {
   font-weight: bold;
-  border: 3px double rgb(22, 24, 23);
+  border: 1px solid rgb(22, 24, 23);
   text-decoration: none;
-  color: rgb(13, 14, 13);
+  color: rgb(21, 22, 21);
   transition: var(--transition-fast);
-  background-color: rgb(153, 255, 187);
+  background: rgb(153, 255, 187);
+  background: -webkit-linear-gradient(to right, rgb(153, 255, 187), rgb(94, 167, 124));
+  background: linear-gradient(to right, rgb(153, 255, 187), rgb(94, 167, 124));
 }
 
 .hero a:hover {
-  background-color: rgba(9, 10, 9, 0.7);
+  background: rgba(9, 10, 9, 0.7);
   color: white;
 }
 
