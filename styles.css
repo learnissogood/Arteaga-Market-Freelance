@@ -410,6 +410,7 @@ body {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
   border-radius: 30px;
   margin: 50px;
+  border-radius: 30px;
 }
 
 .video {
@@ -437,6 +438,7 @@ body {
   margin: 100px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -793,6 +795,7 @@ textarea {
 @media (max-width: 600px) {
   .card-video {
     grid-template-columns: 100%;
+    border-radius: 30px;
   }
 
   .video {
@@ -801,12 +804,13 @@ textarea {
     border-top-right-radius: 30px;
   }
 
-  .card-content {
+   .card-video-content {
     padding: 20px;
     padding-top: 10px;
     border-radius: 0px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
   }
 
   .card-content h3 {
