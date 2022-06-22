@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Business website</title>
+  <script src="form.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -93,12 +94,12 @@
       <div class="card container1">
         <img src="assets/gsjx-1-52-1-sistema.png" alt="GSJX-1-52">
         <div class="con-text">
-          <h2>
+          <h2 id="52">
             GSJX-1-52
           </h2>
           <p>
             Serie Economica de maquinas de tejer planas computarizadas de un solo sistema
-            <button>
+            <button onclick="appendToTextarea(52)">
               Consultenos
             </button>
           </p>
@@ -107,12 +108,12 @@
       <div class="card container1">
         <img src="assets/GSJX-1-72.png" alt="GSJX-3-72">
         <div class="con-text">
-          <h2>
+          <h2 id="72">
             GSJX-3-72
           </h2>
           <p>
             Serie de maquinas superiores de zapato volador 3D
-            <button>
+            <button  onclick="appendToTextarea(72)">
               Consultenos
             </button>
           </p>
@@ -184,7 +185,7 @@
     </div>
     <div class="form">
       <div class="container w3-round-xlarge" style="margin-bottom: 25px">
-        <form class="w3-highway-blue w3-padding-large w3-round-large"
+        <form id="form" class="w3-highway-blue w3-padding-large w3-round-large"
           action="https://formsubmit.co/juanchi097@gmail.com" method="POST">
           <h3 style="text-align: center;"><i class="fa fa-check-square-o" style="font-size: 15px;"></i>Consultenos
           </h3>
@@ -195,7 +196,7 @@
           <label for="lname">Pick a date</label><br>
           <input type="date" id="date" name="date" placeholder="Your date" required><br><br>
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+          <textarea value="hola jorge" id="subject" name="subject" placeholder="Write something.." style="height:200px"
             required></textarea>
           <input class="w3-round-large" type="submit" value="Submit">
         </form>
