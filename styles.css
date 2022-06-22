@@ -57,6 +57,9 @@ body {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
 }
 
 .nav-container {
@@ -66,6 +69,7 @@ body {
 }
 
 .nav-container .links {
+  color: white;
   display: flex;
   width: 100%;
   align-items: center;
@@ -74,7 +78,7 @@ body {
 }
 
 .nav-container .logo {
-  color: black;
+  color: white;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -95,7 +99,7 @@ body {
 }
 
 .nav-container .logo p {
-  font-size: var(--font-large);
+  font-size: 18px;
 }
 
 .nav-container .links a:hover,
