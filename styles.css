@@ -861,6 +861,11 @@ textarea {
     border-top-right-radius: 0px;
   }
 
+  .card-machine-content {
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
+
   .card-content h3 {
     margin: 0px;
     padding: 0px;
