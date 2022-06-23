@@ -720,7 +720,7 @@ textarea {
   .hero h1 {
     font-size: var(--font-3x-large);
     font-weight: bold;
-    color: rgba(153, 255, 187, 0.7);
+    color: rgba(3, 3, 3, 0.7);
     z-index: 2;
     filter: drop-shadow(2px 2px #000);
   }
