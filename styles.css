@@ -813,6 +813,7 @@ textarea {
   }
 
   .contact .short-contact h2 {
+    justify-content: center;
     width: fit-content;
   }
 
