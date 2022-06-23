@@ -677,6 +677,10 @@ textarea {
     justify-content: flex-end;
     align-items: center;
   }
+
+  .mobile-links-active {
+    width: 100%;
+  }
   
   .mobile-links a {
     padding: 8px 8px 8px 32px;
