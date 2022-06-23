@@ -861,6 +861,23 @@ textarea {
     border-top-right-radius: 0px;
   }
 
+  .card{
+    transform: scale(0.95);
+  }
+    
+  .card .con-text p {
+    margin-bottom: 0px;
+    opacity: 1;
+  }
+    
+  .card img {
+    transform: scale(1);
+  }
+    
+  .card:after {
+    height: 500px;
+  }
+
   .card-machine-content {
     border-top: none;
   }
