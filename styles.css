@@ -839,6 +839,7 @@ textarea {
 
 @media (max-width: 600px) {
   .card-video {
+    margin: 0px;
     grid-template-columns: 100%;
     border-radius: 30px;
   }
