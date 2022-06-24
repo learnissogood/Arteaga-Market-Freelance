@@ -451,6 +451,36 @@ body {
   gap: 50px;
 }
 
+.button-modal{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-image{
+  z-index: 50;
+  padding-top: 60px;
+  width: 1000px;
+  height: 650px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  visibility: hidden;
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
+}
+
+.open-popup-image {
+  visibility: visible;
+}
+
+.popup-image img {
+  width: 700px;
+}
+
 .card {
   overflow: hidden;
   position: relative;
@@ -608,7 +638,7 @@ body {
 }
 
 .hi-slide .hi-prev {
-  left: -59px;
+  left: -70px;
 }
 
 .hi-slide .hi-prev::before {
@@ -616,7 +646,7 @@ body {
 }
 
 .hi-slide .hi-next {
-  right: -59px;
+  right: -70px;
 }
 
 .hi-slide .hi-next::before {

@@ -84,16 +84,22 @@
     </div>
 
     <div class="slide hi-slide">
+      <div class="popup-image" id="popup">
+        <div class="button-modal">
+          <button type="button" onclick=closePopup()>X</button>
+        </div>
+        <img id="img" src="assets/gsjx-1-52-1-sistema.png">
+      </div>
       <div class="hi-prev"></div>
       <div class="hi-next"></div>
       <ul>
-        <li><img src="assets/gsjx-1-52-1-sistema.png"></li>
-        <li><img src="assets/gsjx-1-52-1-sistema.png"></li>
-        <li><img src="assets/gsjx-1-52-1-sistema.png"></li>
-        <li><img src="assets/gsjx-1-52-1-sistema.png"></li>
-        <li><img src="assets/gsjx-1-52-1-sistema.png"></li>
-        <li><img src="assets/gsjx-1-52-1-sistema.png"></li>
-        <li><img src="assets/gsjx-1-52-1-sistema.png"></li>
+        <li><img id="0" src="assets/gsjx-1-52-1-sistema.png" onclick="openPopup(0)"></li>
+        <li><img id="2" src="assets/gsjx-1-52-1-sistema.png" onclick="openPopup(1)"></li>
+        <li><img id="2" src="assets/gsjx-1-52-1-sistema.png" onclick="openPopup(2)"></li>
+        <li><img id="2" src="assets/gsjx-1-52-1-sistema.png" onclick="openPopup(3)"></li>
+        <li><img id="4" src="assets/gsjx-1-52-1-sistema.png" onclick="openPopup(4)"></li>
+        <li><img id="5" src="assets/gsjx-1-52-1-sistema.png" onclick="openPopup(5)"></li>
+        <li><img id="6" src="assets/gsjx-1-52-1-sistema.png" onclick="openPopup(6)"></li>
       </ul>
     </div>
 
@@ -288,6 +294,25 @@
 
   <script>
     $('.slide').hiSlide();
+  </script>
+
+  <script>
+    let popup = document.getElementById("popup");
+    const imageArray = ["assets/gsjx-1-52-1-sistema.png", "assets/gsjx-1-52-1-sistema.png", "assets/gsjx-1-52-1-sistema.png", "assets/gsjx-1-52-1-sistema.png", "assets/gsjx-1-52-1-sistema.png", "assets/gsjx-1-52-1-sistema.png", "assets/gsjx-1-52-1-sistema.png"]
+    
+    function openPopup(id) {
+      for (i = 0; i < imageArray.length; i++) {
+        if(i === id) {
+          document.getElementById("img").src=imageArray[i];
+        }
+      }
+      popup.classList.add("open-popup-image");
+    }
+
+    function closePopup() {
+      popup.classList.remove("open-popup-image");
+    }
+
   </script>
 
 </body>
