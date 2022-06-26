@@ -57,7 +57,7 @@ body {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  background: #76BA99;
+  background: white;
 }
 
 .nav-container {
@@ -67,7 +67,7 @@ body {
 }
 
 .nav-container .links {
-  color: white;
+  color: rgba(73,78,169,255);
   display: flex;
   width: 100%;
   align-items: center;
@@ -76,13 +76,18 @@ body {
 }
 
 .nav-container .logo {
-  color: black;
+  margin-left: 15px;
+  color: rgba(73,78,169,255);
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-style: italic;
   display: flex;
   align-items: center;
+}
+
+.img-logo {
+  margin-right: 15px;
 }
 
 .nav-container .links a,
@@ -97,11 +102,10 @@ body {
 }
 
 .nav-container .logo p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.nav-container .links a:hover,
-.nav-container .logo p:hover {
+.nav-container .links a:hover {
   font-size: var(--font-large);
 }
 
@@ -170,7 +174,7 @@ body {
 .hero h1 {
   font-size: var(--font-3x-large);
   font-weight: bold;
-  color: #FFDCAE;
+  color: white;
   filter: drop-shadow(3px 3px 1px #000);
 }
 
@@ -180,12 +184,14 @@ body {
 }
 
 .hero a {
+  padding-top: 7px;
+  text-align: center;
   font-weight: bold;
-  border: 1px solid rgb(22, 24, 23);
+  border: 1px solid rgba(73,78,169,255);
   text-decoration: none;
-  color: rgb(21, 22, 21);
+  color: rgba(73,78,169,255);
   transition: var(--transition-fast);
-  background: #FFDCAE;
+  background: white;
 }
 
 .hero a:hover {
@@ -366,14 +372,18 @@ body {
   float: right;
 }
 
+.disponible {
+  margin-left: -625px;
+}
+
 .why-us {
   min-height: 300px;
   height: auto;
-  background: #76BA99;
+  background: rgba(73,78,169,255);
 }
 
 .why-us h2 {
-  color: rgb(90, 84, 84);
+  color: white;
 }
 
 .why-us .container {
@@ -426,10 +436,10 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: rgb(56, 52, 52);
+  color: white;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
-  background: #FFDCAE;
+  background: #4f7297;
 }
 
 .machines-wrapper {
@@ -690,9 +700,7 @@ body {
 }
 
 .contact form {
-  background: #485563;
-  background: -webkit-linear-gradient(to right, #29323c, #485563);
-  background: linear-gradient(to right, #29323c, #485563);
+  background: rgba(73,78,169,255);
 }
 
 .contact .form .container {
@@ -734,9 +742,9 @@ textarea {
 }
 
 .contact .form input[type="submit"] {
-  border: 3px solid rgb(153, 255, 187);
+  border: 3px solid rgba(250, 252, 251, 0.7);
   text-decoration: none;
-  color: rgb(153, 255, 187);
+  color: black;
   transition: var(--transition-fast);
   background-color: transparent;
   padding: 10px 25px;
@@ -750,7 +758,7 @@ textarea {
 /*Footer*/
 .footer {
   min-height: 80px;
-  background: #76BA99;
+  background: rgba(73,78,169,255);
   display: flex;
   align-items: center;
   justify-content: center;
