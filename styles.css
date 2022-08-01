@@ -421,6 +421,32 @@ body {
   border-radius: 30px;
 }
 
+.card-video .info-container {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-large);
+  padding: 15px;
+
+}
+
+.card-video .info-container .info-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  padding: 10px;
+  padding: 30px;
+  margin: 10px;
+}
+
+.card-video .info-container li {
+  font-size: small;
+}
+
+.grid-li {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .video {
   width: 100%;
   aspect-ratio: 16/9;
