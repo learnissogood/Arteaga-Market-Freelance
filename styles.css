@@ -429,17 +429,12 @@ body {
 
 }
 
-.card-video .info-container .info-grid {
+.info-grid {
   display: flex;
   flex-direction: column;
   text-align: center;
   grid-gap: 10px;
   padding: 30px;
-  margin: 0px;
-}
-
-.card-video .info-container .info-grid .info1 {
-  padding: 20px;
 }
 
 .card-video .info-container li {
