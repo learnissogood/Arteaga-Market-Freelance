@@ -430,12 +430,16 @@ body {
 }
 
 .card-video .info-container .info-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   grid-gap: 10px;
-  padding: 10px;
   padding: 30px;
-  margin: 10px;
+  margin: 0px;
+}
+
+.card-video .info-container .info-grid .info1 {
+  padding: 20px;
 }
 
 .card-video .info-container li {
